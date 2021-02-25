@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+from service_desk.apps import account
+from service_desk.apps.account import views
 
-urlpatterns = [
-    path('grappelli/', include('grappelli.urls')), # grappelli URLS
+urlpatterns = {
+    path('grappelli/', include('grappelli.urls')),  # grappelli URLS
     path('admin/', admin.site.urls),
-]
+    #url(r'^admin/', include(admin.site.urls)),
+    #url(r'^account/', include('account.urls')),
+    path('account/login/', views.user_login),
+    # url(r'^account/', include('account.urls')),
+}
