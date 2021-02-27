@@ -6,3 +6,4 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('create', views.create, name='create'),
 ]
+#TODO: Добавить личный кабинет

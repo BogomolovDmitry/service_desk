@@ -28,3 +28,5 @@ def create(request):
         'error': error
     }
     return render(request, 'main/create.html', context)
+
+#TODO: Добавить отображение в виде таблицы
