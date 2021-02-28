@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\taskmanager\main\forms.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\taskmanager\main\models.py">
           <value>
             <Attribute>
@@ -17,7 +24,35 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\taskmanager\main\templates\main\create.html">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\taskmanager\taskmanager\asgi.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\taskmanager\taskmanager\image-classif.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\taskmanager\taskmanager\settings.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\taskmanager\taskmanager\urls.py">
           <value>
             <Attribute>
               <option name="separator" value="," />

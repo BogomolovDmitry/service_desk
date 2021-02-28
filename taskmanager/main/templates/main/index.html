@@ -11,6 +11,10 @@
             <div class="alert alert-warning mt-2">
                 <h3>{{ el.title }}</h3>
                 <p>{{ el.task }}</p>
+                <p>{{img_obj.image.url}}</p>
+                {% if el.image %}
+                    <td><img src="{{el.image.url}}" width="350" height="300"></td>
+                {% endif %}
             </div>
         {% endfor %}
     {% else %}

@@ -15,10 +15,12 @@ def about(request):
 def create(request):
     error = ''
     if request.method == 'POST':
-        form = TaskForm(request.POST)
+        form = TaskForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            img_obj = form.instance
+            # return redirect('home')
+            return render(request, 'main/create.html', {'form': form, 'img_obj': img_obj})
         else:
             error = 'Форма была неверной'
 
